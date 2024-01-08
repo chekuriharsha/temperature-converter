@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("/template/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+.tc-main{
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.tc-box{
+    width: 500px;
+    height: 400px;
+    max-width: 500px;
+    position: absolute;
+    right: 200px;
+    background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    border-radius: 50px;
+}
+.tc-title{
+    background-color: transparent;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tc-contents{
+    background-color: transparent;
+    padding: 20px;
+}
+.celsius{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 20px;
+}
+.kelvin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 20px;
+}
+.fahrenheit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 20px;
+}
+.tc-contents input{
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 26px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+}
+.tc-symbol{
+    height: 22px;
+}
+.tc-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+}
+.tc-button button{
+    border: none;
+    border-radius: 90px;
+    outline: none;
+    background-color:black;
+    color:white;
+    width : 100px;
+    height: 40px;
+    font-size: large;
+}
+.tc-button button:hover{
+    background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    border:2px solid black;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
