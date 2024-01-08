@@ -25,7 +25,6 @@ body{
     height: 400px;
     max-width: 500px;
     position: absolute;
-    right: 200px;
     background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
     border-radius: 50px;
 }
