@@ -1,66 +1,73 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-image: url("/template/background1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
 .tc-main{
-    height: 100vh;
-    width: 100vw;
-    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    min-width: 400px;
 }
-.tc-box{
-    width: 500px;
-    height: 400px;
-    max-width: 500px;
-    position: absolute;
-    background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+.tc-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     border-radius: 50px;
+    position: absolute;
+    top: 200px;
 }
-.tc-title{
+
+.tc-title {
     background-color: transparent;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.tc-contents{
+
+.tc-contents {
     background-color: transparent;
     padding: 20px;
 }
-.celsius{
+
+.celsius {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     padding-top: 20px;
 }
-.kelvin{
+
+.kelvin {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     padding-top: 20px;
 }
-.fahrenheit{
+
+.fahrenheit {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     padding-top: 20px;
 }
-.tc-contents input{
+
+.tc-contents input {
     outline: none;
     border: 2px solid black;
     border-radius: 5px;
@@ -68,32 +75,52 @@ body{
     width: 300px;
     padding: 10px;
     font-size: 16px;
-    background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
-.tc-symbol{
+
+.tc-symbol {
     height: 22px;
 }
-.tc-button{
+
+.tc-button {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: transparent;
     padding: 10px;
 }
-.tc-button button{
+
+.tc-button button {
     border: none;
     border-radius: 90px;
     outline: none;
-    background-color:black;
-    color:white;
-    width : 100px;
+    background-color: black;
+    color: white;
+    width: 100px;
     height: 40px;
     font-size: large;
 }
-.tc-button button:hover{
-    background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
-    border:2px solid black;
+
+.tc-button button:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border: 2px solid black;
     font-size: 22px;
     color: black;
     cursor: pointer;
+}
+@media only screen and (max-width:640px){
+    
+.tc-contents input {
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 26px;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+.tc-main{
+    min-width: 100%;
+}
 }
