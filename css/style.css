@@ -13,21 +13,19 @@ body {
     background-attachment: fixed;
 }
 .tc-main{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    min-width: 400px;
+    flex-direction: row;
 }
-.tc-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-    border-radius: 50px;
-    position: absolute;
-    top: 200px;
+.tc-box{
+    width: 600px;
+    height: 400px;
+    background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    border-radius: 45px;
+    margin: 20px;
 }
 
 .tc-title {
@@ -109,18 +107,57 @@ body {
     cursor: pointer;
 }
 @media only screen and (max-width:640px){
+    .tc-main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .tc-box{
+        width: 400px;
+        height: 400px;
+        background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+        border-radius: 45px;
     
-.tc-contents input {
-    outline: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    height: 26px;
-    width: 200px;
-    padding: 10px;
-    font-size: 16px;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-}
-.tc-main{
-    min-width: 100%;
-}
+    }
+    .tc-contents input {
+        outline: none;
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 26px;
+        width: 180px;
+        padding: 10px;
+        font-size: 16px;
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    }
+    .tc-title h1{
+        font-size: x-large;
+    }
+    .tc-contents {
+        background-color: transparent;
+        padding-top:25px;
+        padding-bottom: 25px;
+    }
+    .celsius {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    
+    .kelvin {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    
+    .fahrenheit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
 }
